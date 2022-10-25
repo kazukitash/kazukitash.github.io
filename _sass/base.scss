@@ -1,0 +1,53 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  color: rgb(15, 15, 15);
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "ヒラギノ角ゴシック", "Hiragino Sans", "メイリオ", Meiryo, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(230, 230, 230);
+  margin: 0px;
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h3,
+p {
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: none;
+}

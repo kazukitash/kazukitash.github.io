@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  line-height: 3rem;
+  bottom: 0;
+  font-size: 0.8rem;
+  position: absolute;
+  text-align: center;
+
+  a,
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: rgb(15, 15, 15);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      margin: 0 1rem;
+    }
+  }
+}
