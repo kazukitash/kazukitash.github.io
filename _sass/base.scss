@@ -37,7 +37,7 @@ p {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -50,4 +50,9 @@ h3 {
 
 a:hover {
   text-decoration: none;
+}
+
+ul {
+  list-style-position: inside;
+  margin-bottom: 0.5rem;
 }
