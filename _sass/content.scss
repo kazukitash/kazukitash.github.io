@@ -1,6 +1,192 @@
+$content-width: 1100px;
+
 .content--default {
   box-sizing: border-box;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.games {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  background-color: rgb(120, 130, 150);
+
+  a {
+    display: block;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .games__feature {
+    position: relative;
+    height: 100vw * 9 / 16;
+
+    .games__feature__item {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1000ms 0s ease;
+
+      &.active {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .games__list {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    .games__list__item {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 200ms 0s ease;
+      }
+
+      &.active {
+        border-top: 2px solid $highlight-color;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        img {
+          width: 97%;
+          height: 95%;
+          border-radius: 10px;
+        }
+      }
+
+      &.active:hover {
+        cursor: default;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+}
+
+.news {
+  margin: 0 6px;
+  padding-top: 1rem;
+  list-style: none;
+
+  .news__item {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-areas:
+      "i i"
+      "d c";
+    grid-template-columns: 8rem auto;
+    align-items: center;
+
+    .news__item__date {
+      grid-area: d;
+      color: $header-color;
+      width: 8rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .news__item__image {
+      grid-area: i;
+      display: block;
+      margin: 0.1rem 0.5rem;
+      width: calc(100% - 1rem);
+      border-radius: 5px;
+    }
+
+    .news__item__content {
+      margin: 0.5rem 0;
+      grid-area: c;
+    }
+  }
+
+  .news__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .content--default {
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  .games {
+    grid-template-rows: none;
+    grid-template-columns: 3fr 1fr;
+
+    .games__feature {
+      height: calc((100vw - 40px) * 3 / 4 * 9 / 16);
+    }
+
+    .games__list {
+      flex-flow: column;
+
+      .games__list__item.active {
+        border-top: none;
+        border-left: 2px solid $highlight-color;
+      }
+    }
+  }
+
+  .news {
+    margin: 0;
+
+    .news__item {
+      margin-bottom: 0;
+      grid-template-areas: "d i c";
+      grid-template-columns: 6rem min-content auto;
+
+      .news__item__date {
+        width: 6rem;
+      }
+
+      .news__item__image {
+        width: auto;
+        height: 2rem;
+      }
+
+      .news__item__content {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .content--default {
+    width: $content-width;
+  }
+
+  .games {
+    .games__feature {
+      height: $content-width * 3 / 4 * 9 / 16;
+    }
+  }
 }

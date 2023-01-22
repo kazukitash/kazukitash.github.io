@@ -1,20 +1,32 @@
+$font-color: rgb(100, 100, 100);
+$highlight-color: rgb(255, 20, 20);
+$header-color: rgb(40, 40, 40);
+
 html {
   margin: 0px;
   padding: 0px;
-  color: rgb(15, 15, 15);
-  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "ヒラギノ角ゴシック", "Hiragino Sans", "メイリオ", Meiryo, sans-serif;
-  font-size: 16px;
+  color: $font-color;
+  font-family: "メイリオ", Meiryo, sans-serif;
+  font-size: 13px;
 }
 
 body {
   width: 100vw;
   min-height: 100vh;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(250, 250, 250);
   margin: 0px;
   box-sizing: border-box;
   padding-bottom: 3rem;
   position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $header-color;
 }
 
 h1,
@@ -42,17 +54,49 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
+  font-weight: normal;
+  width: 6rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-bottom: 2px solid $highlight-color;
+  margin-left: 6px;
+  margin-top: 0.5rem;
 }
 
 h3 {
   font-size: 1.2rem;
 }
 
-a:hover {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: $font-color;
+}
+
+a:hover {
+  color: $highlight-color;
 }
 
 ul {
   list-style-position: inside;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 16px;
+  }
+
+  h2 {
+    margin-left: 0;
+  }
 }
