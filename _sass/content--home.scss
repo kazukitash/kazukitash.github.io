@@ -1,0 +1,19 @@
+.content--home {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 760px) {
+  .content--home {
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .content--home {
+    width: $content-width;
+  }
+}
