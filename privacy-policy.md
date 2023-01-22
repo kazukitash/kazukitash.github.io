@@ -5,7 +5,7 @@ title: Yukima - Privacy policy
 
 # プライバシーポリシー
 
-<p style="font-size: 0.8rem; text-align: right;">2021 年 2 月 15 日制定・施行</p>
+<p style="font-size: 0.8rem; text-align: right; margin: 0 0.5rem;">2021 年 2 月 15 日制定・施行</p>
 
 Yukima は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。
 
