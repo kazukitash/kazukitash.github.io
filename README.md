@@ -1,6 +1,6 @@
-# Yukima
+# Yukima Games HP
 
-## Getting started
+## 開発の始め方
 
 ```shell
 # pull
@@ -11,4 +11,14 @@ cd kazukitash.github.io
 make
 
 # open http://localhost:4000
+```
+
+## Apple Silicon Macの場合
+
+Dockerのコンテキストをarm64からx86_64に変更する。
+
+```sh
+limactl stop default
+limactl start x86_64
+docker context use lima-x86_64
 ```

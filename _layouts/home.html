@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }}</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/home.css" />
-    <script src="assets/js/home.js"></script>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <script src="/assets/js/home.js"></script>
   </head>
   <body>
-    {% include header.html %}
-    <article class="content--home">{{ content }}</article>
+    {% include header.html %} {% include games.html %}
+    <article class="content">{{ content }}</article>
     {% include footer.html %}
   </body>
 </html>

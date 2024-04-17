@@ -1,0 +1,19 @@
+.post {
+  .post__date {
+    text-align: right;
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  pre.highlight {
+    background: $code-bgcolor;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    code.hljs {
+      overflow-x: scroll;
+    }
+  }
+}
