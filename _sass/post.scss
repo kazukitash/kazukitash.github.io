@@ -1,6 +1,7 @@
 .post {
   .post__date {
     text-align: right;
+    margin-bottom: 1rem;
   }
 
   ul {
@@ -13,6 +14,7 @@
     padding: 1rem;
 
     code.hljs {
+      display: block;
       overflow-x: scroll;
     }
   }
