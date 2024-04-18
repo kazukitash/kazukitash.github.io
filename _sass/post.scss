@@ -32,4 +32,8 @@
       overflow-x: scroll;
     }
   }
+
+  pre:has(code.language-mermaid) {
+    overflow-x: scroll;
+  }
 }
