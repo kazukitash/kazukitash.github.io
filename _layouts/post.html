@@ -10,11 +10,22 @@
     <link rel="stylesheet" href="/assets/css/highlightjs-copy.min.css" />
     <script src="/assets/js/highlight.min.js"></script>
     <script src="/assets/js/highlightjs-copy.min.js"></script>
+    <script src="/assets/js/mermaid.min.js"></script>
   </head>
   <body>
     <script>
       hljs.addPlugin(new CopyButtonPlugin());
       hljs.highlightAll();
+      document.addEventListener("DOMContentLoaded", function () {
+        mermaid.initialize({
+          startOnLoad: true,
+          theme: "neutral",
+        });
+        window.mermaid.init(
+          undefined,
+          document.querySelectorAll(".language-mermaid")
+        );
+      });
     </script>
     {% include header.html %}
     <article class="content post">
