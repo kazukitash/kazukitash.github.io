@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/post.css" />
     <link rel="stylesheet" href="/assets/css/tomorrow-night-blue.css" />
     <link rel="stylesheet" href="/assets/css/highlightjs-copy.min.css" />
+    <script src="/assets/js/terraform.js"></script>
     <script src="/assets/js/highlight.min.js"></script>
     <script src="/assets/js/highlightjs-copy.min.js"></script>
     <script src="/assets/js/mermaid.min.js"></script>
@@ -15,6 +16,7 @@
   <body>
     <script>
       hljs.addPlugin(new CopyButtonPlugin());
+      hljs.registerLanguage("terraform", window.hljsDefineTerraform);
       hljs.highlightAll();
       document.addEventListener("DOMContentLoaded", function () {
         mermaid.initialize({
