@@ -1,0 +1,117 @@
+.games {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  background-color: $game-bgcolor;
+
+  a {
+    display: block;
+    width: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .games__feature {
+    position: relative;
+    height: 100vw * 9 / 16;
+
+    .games__feature__item {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1000ms 0s ease;
+
+      &.active {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  .games__list {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+
+    .games__list__item {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      border-top: 2px solid $game-bgcolor;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 200ms 0s ease;
+      }
+
+      &.active {
+        border-top: 2px solid $highlight-color;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        img {
+          width: 97%;
+          height: 95%;
+          border-radius: 10px;
+        }
+      }
+
+      &.active:hover {
+        cursor: default;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .games {
+    grid-template-rows: none;
+    grid-template-columns: 3fr 1fr;
+
+    .games__feature {
+      height: calc((100vw - 40px) * 3 / 4 * 9 / 16);
+    }
+
+    .games__list {
+      flex-flow: column;
+
+      .games__list__item {
+        border-top: none;
+        border-left: 2px solid $game-bgcolor;
+
+        &.active {
+          border-top: none;
+          border-left: 2px solid $highlight-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .games {
+    margin: 0 auto;
+    width: $content-width;
+
+    .games__feature {
+      height: $content-width * 3 / 4 * 9 / 16;
+    }
+  }
+}
