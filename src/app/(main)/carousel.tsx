@@ -57,7 +57,7 @@ const Carousel = () => {
           />
         </Link>
       </div>
-      <div className="flex flex-row md:flex-col justify-center md:basis-1/4">
+      <div className="flex flex-row md:flex-col justify-center md:basis-1/4 w-full md:w-auto">
         {games.map((game) => (
           <CarouselItem
             key={game.index}
