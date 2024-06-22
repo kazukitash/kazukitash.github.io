@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className="w-full h-full">
+    <html lang="ja" className="w-full h-full text-slate-700">
       <body className="font-meiryo flex flex-col w-full h-full">
         <div className="flex-none">
           <Header />
