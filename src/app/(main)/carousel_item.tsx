@@ -21,7 +21,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
       width={1920}
       height={1080}
       sizes={"25vw"}
-      className={`box-border border-t-2 md:border-t-0 md:border-l-2  ${
+      className={`box-border border-t-2 basis-1/3 md:basis-auto md:border-t-0 md:border-l-2  ${
         isActive ? "border-accent" : "border-gray-400"
       }`}
     />
