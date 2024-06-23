@@ -13,9 +13,9 @@ const Blog = async () => {
           <Link
             href={blog.link}
             key={blog.key}
-            className="flex items-center py-1 hover:text-accent"
+            className="flex flex-col md:flex-row md:items-center py-1 hover:text-accent"
           >
-            <div className="flex-none text-center font-bold w-32">
+            <div className="flex-none text-right md:text-center text-sm md:text-base md:font-bold w-full md:w-32">
               {blog.date}
             </div>
             <div className="ml-1">{blog.title}</div>

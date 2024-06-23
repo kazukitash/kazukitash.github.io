@@ -9,9 +9,9 @@ const News = () => {
         return (
           <div
             key={article.date}
-            className="grid [grid-template-areas:'i_i''d_c'] md:[grid-template-areas:'d_i_c'] md:grid-cols-[8rem_min-content_auto] items-center md:py-1"
+            className="grid [grid-template-areas:'i''d''c'] md:[grid-template-areas:'d_i_c'] md:grid-cols-[8rem_min-content_auto] items-center md:py-1"
           >
-            <div className="[grid-area:d] w-32 font-bold text-center">
+            <div className="[grid-area:d] w-full md:w-32 md:font-bold text-sm md:text-base text-right md:text-center">
               {article.date}
             </div>
             <div className="[grid-area:i] mt-4 mb-1 md:w-32 md:m-0">
