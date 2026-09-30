@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="予定の会議を自動で開くのGoogleユーザーデータへのアクセス、利用、保存、共有、削除について。">
+  <title>プライバシーポリシー | Calendar Meeting Opener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <div class="shell">
+    <header>
+      <a class="brand" href="./">Calendar Meeting Opener</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="./">紹介</a>
+        <a href="privacy.html" aria-current="page">プライバシー</a>
+        <a href="terms.html">利用条件</a>
+      </nav>
+    </header>
+    <main id="main">
+      <p class="eyebrow">PRIVACY POLICY</p>
+      <h1>プライバシーポリシー</h1>
+      <p class="date">2026年10月1日 制定・施行</p>
+      <section><h2>1. 対象</h2><p>この方針は、Yukima Gamesが提供するChrome拡張機能「予定の会議を自動で開く / Calendar Meeting Opener」と、そのmacOS用補助プログラムによる情報の取扱いを説明します。</p></section>
+      <section><h2>2. アクセスする情報と目的</h2><p>Googleログインでは、メールアドレスおよび基本プロフィールへのアクセス権限を求めます。現在の実装はGoogleアカウントの識別子とメールアドレスを読み取り、認証確認、予定への参加状態の判定、Google Meetを開くアカウントの指定に利用します。</p><p>Googleカレンダーでは、ログインしたアカウントのメインカレンダーの予定を読み取ります。取得対象には予定の識別子、件名、開始・終了日時、説明、会議情報、参加者情報・回答状況などが含まれます。会議リンクの抽出、対象予定の判定、予定一覧・件数の表示、会議リンクを開く時刻の設定に利用します。現在の取得期間は当日の開始からおおむね3日先までです。予定の書き換えは行いません。</p></section>
+      <section><h2>3. 保存と保持</h2><p>対象予定の識別子、件名、開始・終了日時、会議URL、開いた予定の記録を、お使いのChromeプロフィールのローカルストレージに保存します。認証トークンはChromeの認証機能を通じて取得・管理します。これらのカレンダーデータを開発者のサーバーへ保存する仕組みはありません。</p><p>保存データは同期時の更新・削除やサインアウトなどで処理されます。経過日数による一律の自動削除期間は設けていません。</p></section>
+      <section><h2>4. 外部サービスと補助プログラム</h2><p>認証および予定の取得のためGoogleのサービスと直接通信します。会議リンクを開く際は、そのURLに対応する会議サービスにアクセスします。Google MeetのURLには、利用アカウントを指定するためメールアドレスを含むことがあります。</p><p>macOS用補助プログラムを利用する場合、会議URLを同じ端末上の補助プログラムへ渡し、Google Meetアプリの起動に使います。会議サービスやブラウザなどの情報の取扱いには、それぞれの方針も適用されます。</p><p>取得したGoogleユーザーデータを販売したり、広告配信・広告分析に利用したりしません。拡張機能に開発者向けアクセス解析・利用状況送信機能はありません。</p><p>この案内サイトはGitHub Pagesで公開しています。サイトへのアクセスに伴う情報の取扱いは、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>もご確認ください。この案内サイトにはアクセス解析スクリプトを設置していません。</p></section>
+      <section><h2>5. 利用停止・削除</h2><p>拡張機能のポップアップ右上にあるサインアウトボタンから、連携の解除要求、Chromeの認証キャッシュの削除、予定を開くアラームの解除、保存した予定と開いた予定の記録の削除を行えます。</p><p>Google側のアクセス権はGoogleアカウントの<a href="https://myaccount.google.com/connections">サードパーティとの接続</a>でも確認・削除できます。端末の拡張データを削除するにはChromeから本拡張機能を削除してください。Googleカレンダー上の元の予定や、会議サービス側の記録はこれらの操作では削除されません。</p></section>
+      <section><h2>6. 安全性とGoogleのポリシー</h2><p>GoogleとのAPI通信にはHTTPSを使用し、OAuth認証によりアクセスします。端末とChromeプロフィールの適切な管理もお願いします。</p><p>Google APIから取得した情報の利用および他のアプリへの転送は、Limited Useの要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p></section>
+      <section><h2>7. 変更・お問い合わせ</h2><p>機能や情報の取扱いに変更がある場合は本ページを更新します。利用目的の重要な変更で同意が必要な場合は、変更後の取扱いを始める前に案内します。</p><p>提供者：Yukima Games<br>お問い合わせ：<a href="mailto:support@yukima.games">support@yukima.games</a></p></section>
+    </main>
+    <footer>
+      <p>提供：Yukima Games</p>
+      <a href="mailto:support@yukima.games">support@yukima.games</a>
+      <p>© 2026 Yukima Games</p>
+    </footer>
+  </div>
+</body>
+</html>
